@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="image/d.png" type="image/x-icon"> 
+    <title>E-Commerce</title>
+</head>
+<body>
+    <section class="sec-one">
+        <div class="socail-call bg-dark">
+            <div class="socail">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="phone">
+                <span>Call + 01099800532</span>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="image/logo.png" class="w-75"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon "></span>
+                    <span class="navbar-toggler-icon "></span>
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Gallery</a>
+                            <span class="sale-lable"> New</span>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="div d-flex">
+                                <input id="searchBar" type="text" class="form-control" placeholder="search" aria-label="search">
+                                <i id="colseSearchBar" class="fas fa-times"></i>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav mb-2 mb-lg-0 right-menu ">
+                        <li>
+                            <a href="#" id="searchIcon" class="search"><i class="fas fa-search"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="user"><i class="fas fa-user"></i></a>
+                        </li>
+                        <li>
+                            <a href="addToCart.html"><i class="fas fa-shopping-cart" style="margin-top: 4px; margin-left:-2px"> 
+                            <span id="num"class="num-card">1</span>
+                            </i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <section class="sec-two" id="hero">
+        <div class="head-info ms-5">
+            <h4>Trade-in-offer</h4>
+            <h2>Super Value Selas</h2>
+            <h1>On All  Product</h1>
+            <p>Save More With Your Coupons & Up To 70% off!</p>
+            <button class="btn">Shop Now</button>
+        </div>
+        
+    </section>
+    
+    <section id="feature">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <div class="feature-box card">
+                        <img src="image/features/f1.png">
+                        <h6 style="background-color: #1403ff67;                        ">Free Shipping</h6>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="feature-box card">
+                        <img src="image/features/f2.png">
+                        <h6 style="background-color: #d1e8f2;">Free Shipping</h6>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="feature-box card">
+                        <img src="image/features/f3.png">
+                        <h6 style="background-color: #ff00ff52;">Free Shipping</h6>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="feature-box card">
+                        <img src="image/features/f4.png">
+                        <h6 style="background-color: #c0670d71;">Free Shipping</h6>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="feature-box card">
+                        <img src="image/features/f5.png">
+                        <h6 style="background-color:  #e70d0d52;">Free Shipping</h6>
+                    </div>
+                </div>
+                <div class="col-md-2 ">
+                    <div class="feature-box card">
+                        <img src="image/features/f6.png">
+                        <h6 style="background-color: rgb(232, 255, 127);">Free Shipping</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <section id="slider">
+        <div class="slider">
+            <div class="img-box">
+                <img class="img" id="img" src="image/slider/4.jpg">
+            </div>
+            <div class="transtion">
+                <button class=" btn " id="prev"><i class="fas fa-chevron-left"></i></button>
+                <button class=" btn" id="next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+    
+    <section id="Product1" class="m-auto ">
+        
+        <h2>Feature Products</h2>
+        <p>Summer Collection New Modern Design</p>
+        <div class="sort mb-3">
+            <button class="btn btn-warning" onclick="filterProducts(event)">T-Shirt</button>
+            <button class="btn btn-warning" onclick="filterProducts(event)">Shirt</button>
+            <button class="btn btn-warning" onclick="filterProducts(event)">Polo</button>
+            <button class="btn btn-warning" onclick="filterProducts(event)">Round</button>
+        </div>
+        <div class="pro-container ">
+            <div class="row" id="inner">  
+            </div>
+        </div>
+    </section>
+
+    <section id="banner">
+        <h4>Repair Services</h4>
+        <h2>Up to <span>70% off </span>  - All t-Shirt & Accessories</h2>
+        <button class="btn btn-warning">Explore More</button>
+    </section>
+
+    <section id="news">
+    </section>
+
+
+
+<!-- Button Up And Down  -->
+    <button id="btnUP" class="btn text-white ">
+        <i class="fas fa-angle-up"></i>
+    </button>
+
+    <button id="btnDown" class="btn text-white ">
+        <i class="fas fa-angle-down"></i>
+    </button>
+
+    <!-- Footer -->
+    <footer id=" foote" class="sec-gap">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 left-foot">
+                    <img src="image/logo.png">
+                    <h5 class="my-2">Contact</h5>
+                    <h6>Address : <span> 562 Welingotn Road . Street 32</span></h6>
+                    <h6>Phone : <span>010251533222</span></h6>
+                    <h6>Hours : <span> 10:00- 18:00 .MON -Sat</span></h6>
+                </div>
+                <div class="col-md-4">
+                    <div class="left">
+                        <h3>About</h3>
+                        <span>About Us</span>
+                        <span> Delivery Infromation</span>
+                        <span> Privacy Policy</span>
+                    </div>
+                    <div class="right">
+                        <h3>About</h3>
+                        <span>About Us</span>
+                        <span> Delivery Infromation</span>
+                        <span> Privacy Policy</span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h6>Install App</h6>
+                    <p> Fro App Store or Google Play</p>
+                    <img src="image/pay/app.jpg">
+                    <img src="image/pay/play.jpg">
+                    <p>secured Payment Gateways</p>
+                    <img src="image/pay/pay.png">
+                </div>
+            </div> 
+        </div>
+    </footer>
+
+
+    <div class="socail-call bg-dark">
+        <div class="socail">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+        <div class="phone">
+            <span>Call + 01099800532</span>
+        </div>
+    </div>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script  src="./js/data.js"></script>
+    <script  src="./js/main.js"></script>
+</body>
+</html>

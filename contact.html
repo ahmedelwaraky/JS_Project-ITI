@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="shortcut icon" href="image/d.png" type="image/x-icon"> 
+    <title>Contact</title>
+</head>
+<body>
+    <section class="sec-one">
+        <div class="socail-call bg-dark">
+            <div class="socail">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="phone">
+                <span>Call + 01099800532</span>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="image/logo.png" class="w-75"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Gallery</a>
+                            <span class="sale-lable"> New</span>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Shop</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav  mb-2 mb-lg-0 right-menu ">
+                        <li>
+                            <a href="#"  class="search"><i class="fas fa-search"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="user"><i class="fas fa-user"></i></a>
+                        </li>
+                        <li>
+                            <a href="addToCart.html"><i class="fas fa-shopping-cart" style="margin-top: 4px;"> 
+                            <span class="num-card">1</span>
+                            </i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <section  class="contact-sec mt-5 ">
+        <div class="container">
+            <div class="main-header text-center">
+                <h1 > Contact Us </h1>
+            </div>
+            <div class="row">
+                <div class="col-md-6 m-auto">
+                    <form id="myForm">
+
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" id="name" name="name">
+                        <p class="alert alert-danger " id="alertName">Name Is Required</p>
+                        <br>
+            
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" name="email">
+                        <p class="alert alert-danger " id="alertEmail">Email Is Required</p>
+                        <br>
+            
+            
+                        <label for="password">Password:</label>
+                        <input type="password" class="form-control" id="password" name="password">
+                        <p class="alert alert-danger " id="alertPassword">Password Is Required</p><textarea class="form-control" id="message" rows="3" style="resize: none;"></textarea>
+                        <br>
+
+                    </form> 
+                    <div class="text-center">
+                    <button type="submit" class="btn btn-warning col-5" onclick="addInfo()">Submit</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="contact-info">
+                <div class="row row-cols-1 row-cols-md-4 g-4 ">
+                    <div class="col">
+                        <div class="card  py-5 border-0 m-2">
+                            <div class="contact-icon border rounded-circle  d-flex justify-content-center align-items-center">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="card-body text-center">
+                                <h3 class="card-title">location</h3>
+                                <p class="card-text lead">Soho 94 Broadway St New York , NY 1001</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card  py-5 border-0 m-2">
+                            <div class="contact-icon border rounded-circle  d-flex justify-content-center align-items-center">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="card-body text-center">
+                                <h3 class="card-title">branding</h3>
+                                <p class="card-text lead">234-9876-5400<br>888-0123-4567(To Free)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card  py-5 border-0 m-2">
+                            <div class="contact-icon border rounded-circle  d-flex justify-content-center align-items-center">
+                                <i class="fas fa-fax"></i>
+                            </div>
+                            <div class="card-body text-center">
+                                <h3 class="card-title"> fax</h3>
+                                <p class="card-text lead">1-234-567-8900</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card  py-5 border-0 m-2">
+                            <div class="contact-icon border rounded-circle  d-flex justify-content-center align-items-center">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="card-body text-center">
+                                <h3 class="card-title"> email</h3>
+                                <p class="card-text lead">hello@theme.com</p>
+                            </div>
+                        </div>
+                    </div>     
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="footer p-5 bg-light ">
+        <div class="main-footer text-center ">
+            <h6 class="footer-header">Copy Right 2018 © By Daniels All Rights Reserved</h6>    
+        </div> 
+    </footer>
+    <div class="socail-call bg-dark">
+        <div class="socail">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+        <div class="phone">
+            <span>Call + 01099800532</span>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.0.min.js"></script>
+<script src="js/contact.js"></script>
+</body>
+</html>

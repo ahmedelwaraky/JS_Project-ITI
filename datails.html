@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/deatails.css">
+    <link rel="shortcut icon" href="image/d.png" type="image/x-icon"> 
+    <title>Details</title>
+</head>
+<body>
+    <section class="sec-one">
+        <div class="socail-call bg-dark">
+            <div class="socail">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="phone">
+                <span>Call + 01099800532</span>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="image/logo.png" class="w-75"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon "></span>
+                    <span class="navbar-toggler-icon "></span>
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Contact.html">Contect</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Gallery</a>
+                            <span class="sale-lable"> New</span>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Shop</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav mb-2 mb-lg-0 right-menu ">
+                        <li>
+                            <a href="#"  class="search"><i class="fas fa-search "></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="user"><i class="fas fa-user"></i></a>
+                        </li>
+                        <li>
+                            <a href="addToCart.html"><i class="fas fa-shopping-cart" style="margin-top: 4px; margin-left:-2px"> 
+                            <span id="num" class="num-card">1</span>
+                            </i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <section class="sec-gap">
+        <div class="container ">
+            <div id="product-details">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="left-details">
+                            <img id="img" src="image/products/f1.jpg">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="right-details bg-light px-5 py-5">
+                            <h4 id="name">Men's Fashion T-Shirt</h4>  
+                            <h5 id="price">$ 170</h5>
+                            <h2 id="stars"></h2>
+                            <select id="size" class="form-control col-2">
+                                <option value=""><span class="size">Size</span></option>
+                                <option value="m">M</option>
+                                <option value="l">L</option>
+                                <option value="xl">XL</option>
+                            </select>
+                            <h2>Product Info</h2>
+                            <h4 id="des"></h4>
+                            <input id="count" classs="form-control" min="1"  max="4"type="number" value="1"><br> <br>
+                            <button id="addCart"class="btn btn-success">Add To Cart</button>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- <section id="addCart">
+        <div class="details-sec">
+            <div class="cart-contain">
+                <div class="divv d-flex">
+                    <div class="cart-img">
+                        <img src="image/products/f2.jpg" class="w-75">
+                    </div>
+                    <div class="cart-info">
+                        <h2>$50</h2> <br>
+                        <h3>Shirt</h3>
+                    </div>
+                </div>
+
+                
+            </div>
+            <div class="btns d-flex">
+                    <button class="btn"><i class="fas fa-chevron-left"></i></button>
+                    <h3>1</h3>
+                    <button class="btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            
+        </div>
+
+    </section> -->
+    
+<!-- 
+<section class="addCart">
+    <div class="container">
+        <div class="root"></div>
+        <div class="sildbar">
+            <div class="head">
+                <p>My Cart</p>
+            </div>
+            <div class="cartItm">
+                You Cart Is Empty 
+            </div>
+            <div class="foot">
+                <h3>Total</h3>
+                <h2 id="total">$0.00</h2>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+    <script src="js/details.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.0.min.js"></script>
+</body>
+</html>

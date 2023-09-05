@@ -1,0 +1,25 @@
+//product-details page
+<div id="product-details"></div>
+
+<script>
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const rawData = urlParams.get('data');
+        const retrievedData = JSON.parse(rawData);
+
+        const divElement = document.getElementById('product-details');
+        divElement.innerHTML = `
+        <div>
+            <p>Name: ${retrievedData.name}</p>
+            <p>Description: ${retrievedData.des}</p>
+            <p>Star: ${retrievedData.star}</p>
+            <p>Price: ${retrievedData.price}</p>
+        </div>
+        `;
+        console.log(retrievedData); // You can now use the retrieved data as needed
+
+    </script>
+
+
+//main.js 
+         <a href="product-details.html?data=${encodeURIComponent(JSON.stringify(element))}"><i class="fas fa-shopping-cart cart"></i></a>
